@@ -12,9 +12,15 @@ namespace venta_de_dispositivos
 {
     public partial class fusuario : Form
     {
+        public OleDbConnection mi conexion;
         public fusuario()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
