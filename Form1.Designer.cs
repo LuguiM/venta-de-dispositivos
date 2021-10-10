@@ -78,6 +78,8 @@ namespace venta_de_dispositivos
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("New Comic Title 3D", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Blue;
             this.button1.Location = new System.Drawing.Point(176, 267);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -88,6 +90,8 @@ namespace venta_de_dispositivos
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("New Comic Title 3D", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Blue;
             this.button2.Location = new System.Drawing.Point(369, 267);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
