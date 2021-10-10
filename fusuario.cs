@@ -137,5 +137,20 @@ namespace venta_de_dispositivos
                 MessageBox.Show(err.Message);
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OleDbCommand eliminar = new OleDbCommand();
+                miconexion.Open(); 
+                eliminar.Connection = miconexion;
+                eliminar.CommandType = CommandType.Text; 
+
+                eliminar.CommandText = "DELETE FROM tusuario WHERE nombre = '" + txtusuario.Text.ToString() + "'";
+                
+                eliminar.ExecuteNonQuery();
+                this.tusuarioBindingSource.MoveNext(); 
+                miconexion.Close();
+            }
     }
-}
