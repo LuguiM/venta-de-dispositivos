@@ -36,7 +36,7 @@ namespace venta_de_dispositivos
                 fventas f2 = new fventas();
                 f2.Show();
                 this.Hide();
-      
+   
             }
             else
             {
