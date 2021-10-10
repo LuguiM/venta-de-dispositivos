@@ -53,11 +53,6 @@ namespace venta_de_dispositivos
 
      public SqlConnection Conectarbd = new SqlConnection();
 
-        public conexionbd()
-        {
-            Conectarbd.Con nectionString = cadena;
-        }
-
         public void abrir()
         {
             try
@@ -66,7 +61,7 @@ namespace venta_de_dispositivos
             }
             catch (Exception ex)
             {
-                Message("error al abrir BD ");
+                MessageBox.Show("error al abrir BD ");
             }
         }
         public void cerrar()
@@ -75,10 +70,6 @@ namespace venta_de_dispositivos
         }
         conexionbd conexion = new conexionbd();
         conexion.abrir();
-private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

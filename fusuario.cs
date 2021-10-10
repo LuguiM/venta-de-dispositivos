@@ -108,7 +108,7 @@ namespace venta_de_dispositivos
         {
             try
             {
-                OleDbCommand actualizar = newOleDbCommand();
+                OleDbCommand actualizar = new OleDbCommand();
                 miconexion.Open();
                 actualizar.Connection = miconexion;
                 actualizar.CommandType = CommandType.Text;
