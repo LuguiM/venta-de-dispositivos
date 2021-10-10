@@ -36,7 +36,7 @@ namespace venta_de_dispositivos
                 fventas f2 = new fventas();
                 f2.Show();
                 this.Hide();
-   
+
             }
             else
             {
@@ -46,5 +46,36 @@ namespace venta_de_dispositivos
             conexion.Close();
 
         }
-    }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string cadena = "data source = ServidorSQL; initial catalog = BaseDatos; user id = Usuario; password = Contraseña";
+
+     public SqlConnection Conectarbd = new SqlConnection();
+
+        public conexionbd()
+        {
+            Conectarbd.Con nectionString = cadena;
+        }
+
+        public void abrir()
+        {
+            try
+            {
+                Conectarbd.Open();
+            }
+            catch (Exception ex)
+            {
+                Message("error al abrir BD ");
+            }
+        }
+        public void cerrar()
+        {
+            Conectarbd.Close();
+        }
+        conexionbd conexion = new conexionbd();
+        conexion.abrir();
+        }
 }
+
+
