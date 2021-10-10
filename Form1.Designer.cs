@@ -56,11 +56,12 @@ namespace venta_de_dispositivos
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("New Comic Title 3D Italic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(216, 143);
+            this.label2.Location = new System.Drawing.Point(203, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "password";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox1
             // 

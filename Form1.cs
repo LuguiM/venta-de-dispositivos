@@ -75,7 +75,11 @@ namespace venta_de_dispositivos
         }
         conexionbd conexion = new conexionbd();
         conexion.abrir();
+private void label2_Click(object sender, EventArgs e)
+        {
+
         }
+    }
 }
 
 
