@@ -49,27 +49,9 @@ namespace venta_de_dispositivos
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string cadena = "data source = ServidorSQL; initial catalog = BaseDatos; user id = Usuario; password = Contraseña";
-
-     public SqlConnection Conectarbd = new SqlConnection();
-
-        public void abrir()
-        {
-            try
-            {
-                Conectarbd.Open();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("error al abrir BD ");
-            }
+            
         }
-        public void cerrar()
-        {
-            Conectarbd.Close();
-        }
-        conexionbd conexion = new conexionbd();
-        conexion.abrir();
+
     }
 }
 

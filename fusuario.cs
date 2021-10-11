@@ -13,45 +13,45 @@ namespace venta_de_dispositivos
 {
     public partial class fusuario : Form
     {
-        public OleDbConnection mi conexion;
+        public OleDbConnection miconexion;
 
-            public string usuario_modificar;
+        public string usuario_modificar;
         private OleDbConnection myCon;
 
         public fusuario()
         {
-            myCon = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Sistema\sistema.accdb "); 
+            myCon = new OleDbConnection(@"Provider = Microsoft.Jet.OLEDB.4.0; Data Source =| DataDirectory |\sistema.mdb");
             InitializeComponent();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.tusuarioBindingSource.MovePrevious();
+            this.sistemaBindingSource.MovePrevious();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.tusuarioBindingSource.MoveFirst();
+            this.sistemaBindingSource.MoveFirst();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.tusuarioBindingSource.MoveNext();
+            this.sistemaBindingSource.MoveNext();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.tusuarioBindingSource.MoveLast();
+            this.sistemaBindingSource.MoveLast();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             txtusuario.Enabled = true;
             txtclave.Enabled = true;
-            txtnivel.Enabled = true;
+            lstnivel.Enabled = true;
             txtusuario.Text = "";
             txtclave.Text = "";
-            Istniel.Text = "Seleccione nivel";
+            lstnivel.Text = "Seleccione nivel";
             txtusuario.Focus();
             bnuevo.Visible = false;
             bguardar.Visible = true;
@@ -62,7 +62,7 @@ namespace venta_de_dispositivos
         {
             try
             {
-                OleDbCommand guardar = newOleDbCommand();
+                OleDbCommand guardar = new OleDbCommand();
                 miconexion.Open();
                 guardar.Connection = miconexion;
                 guardar.CommandType = CommandType.Text;
@@ -81,23 +81,23 @@ namespace venta_de_dispositivos
                 MessageBox.Show("Usuario agregado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
-                this.tusuarioTableAdapter.Fill(this.sistemaDataSet.tusuario);
-                this.tusuarioBindingSource.MoveLast();
+                this.sistemaTableAdapter.Fill(this.sistemaDataSet.sistema);
+                this.sistemaBindingSource.MoveLast();
             }
             catch (Exception err)
-
+            {
 
                 MessageBox.Show(err.Message);
             }
 
-            }
+        }
 
         private void button7_Click(object sender, EventArgs e)
         {
 
             txtusuario.Enabled = true;
             txtclave.Enabled = true;
-            lstnivel.Enabled = true; 
+            lstnivel.Enabled = true;
             txtusuario.Focus();
             bmodificar.Visible = false;
             bactualizar.Visible = true;
@@ -133,7 +133,7 @@ namespace venta_de_dispositivos
                 MessageBox.Show("Usuario actualizado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception err)
-            { 
+            {
                 MessageBox.Show(err.Message);
             }
         }
@@ -143,14 +143,32 @@ namespace venta_de_dispositivos
             try
             {
                 OleDbCommand eliminar = new OleDbCommand();
-                miconexion.Open(); 
+                miconexion.Open();
                 eliminar.Connection = miconexion;
-                eliminar.CommandType = CommandType.Text; 
+                eliminar.CommandType = CommandType.Text;
 
                 eliminar.CommandText = "DELETE FROM tusuario WHERE nombre = '" + txtusuario.Text.ToString() + "'";
-                
+
                 eliminar.ExecuteNonQuery();
-                this.tusuarioBindingSource.MoveNext(); 
+                this.sistemaBindingSource.MoveNext();
                 miconexion.Close();
             }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
+
+        private void fusuario_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'sistemaDataSet.sistema' Puede moverla o quitarla según sea necesario.
+            this.sistemaTableAdapter.Fill(this.sistemaDataSet.sistema);
+
+        }
+
+        private void bsalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
+}
