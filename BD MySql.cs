@@ -15,7 +15,7 @@ namespace venta_de_dispositivos
 
     public partial class BD_MySql : Form
     {
-        public string cadena_conexion = "Database=agenda;Data Source=localhost;User Id=dba;Passwordba";
+        public string cadena_conexion = "Database=agenda;Data Source=localhost;User Id=admin;Password=admin";
 
         public BD_MySql()
         {
@@ -32,7 +32,7 @@ namespace venta_de_dispositivos
             {
                 string consulta = "select*from contactos";
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
-                MySqlDataAdapter comando = new MySqlDataAdapter(consulta);
+                MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);
                 System.Data.DataSet ds = new System.Data.DataSet();
                 comando.Fill(ds, "agenda");
                 dataGridView1.DataSource = ds;
@@ -81,7 +81,7 @@ namespace venta_de_dispositivos
                 string consulta = "select * from contactos";
 
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
-                MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
+                MySqlDataAdapter da = new MySqlDataAdapter(consulta,conexion);
                 System.Data.DataSet ds = new System.Data.DataSet(); da.Fill(ds, "agenda");
                 dataGridView1.DataSource = ds;
                 dataGridView1.DataMember = "agenda";
@@ -117,20 +117,24 @@ namespace venta_de_dispositivos
                 string myConnectionString = "";
                 if (myConnectionString == "")
                 {
-                    myConnectionString = "Database=agenda;Data Source=localhost;User Id=root;Password=";
+                    myConnectionString = "Database=agenda;Data Source=localhost;User Id=admin;Password=admin";
                     MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-                    string myInsertQuery = "UPDATE agenda SET nombre=?nombre, telefono=?telefono Where id=" + id.Text + "";
+                    string myInsertQuery = "UPDATE agenda SET nombre=?nombre, telefono=?telefono Where id=" + txtid.Text + "";
                     MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
-                    myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 45).Value = nombre.Text;
-                    myCommand.Parameters.Add("?telefono", MySqlDbType.VarChar, 45).Value = telefono.Text;
+                    //myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 45).Value = nombre.Text;
+                    //myCommand.Parameters.Add("?telefono", MySqlDbType.VarChar, 45).Value = telefono.Text;
                     myCommand.Connection = myConnection;
+
                     myConnection.Open();
+
                     myCommand.ExecuteNonQuery();
+
                     myCommand.Connection.Close();
-                    avisos a = new avisos();
-                    a.label1.Text = "Actualizado Con Éxito";
-                    a.ShowDialog();
-                    string cad = "Database=agenda;Data Source=localhost;User Id=root;Password=";
+
+                  
+                   MessageBox.Show ("Actualizado Con Éxito");
+                   
+                    string cad = "Database=agenda;Data Source=localhost;User Id=admin;Password=admin";
                     string query = "select * from agenda";
                     MySqlConnection cnn = new MySqlConnection(cad);
                     MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
@@ -143,9 +147,9 @@ namespace venta_de_dispositivos
             }
             catch (System.Exception)
             {
-                avisos a = new avisos();
-                a.label1.Text = "Hay Campos Vacíos";
-                a.ShowDialog();
+               
+                MessageBox.Show( "Hay Campos Vacíos");
+             
             }
         }
 
@@ -157,11 +161,11 @@ namespace venta_de_dispositivos
 
                 if (myConnectionString == "")
                 {
-                    myConnectionString = "Database=agenda;Data Source=localhost;User Id=root;Password=";
+                    myConnectionString = "Database=agenda;Data Source=localhost;User Id=admin;Password=admin";
                 }
 
                 MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-                string mySelectQuery = "SELECT * From agenda Where id=" + id.Text + "";
+                string mySelectQuery = "SELECT * From agenda Where id=" + txtid.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(mySelectQuery, myConnection);
 
                 myConnection.Open();
@@ -170,23 +174,23 @@ namespace venta_de_dispositivos
 
                 if (myReader.Read())
                 {
-                    nombre.Text = (myReader.GetString(1));
-                    telefono.Text = (myReader.GetString(2));
+                    //txtnombre.Text = (myReader.GetString(1));
+                   // txttelefono.Text = (myReader.GetString(2));
                 }
                 else
                 {
-                    avisos a = new avisos();
-                    a.label1.Text = "El Registro No Existe";
-                    a.ShowDialog();
+                    
+                    MessageBox.Show( "El Registro No Existe");
+                   
                 }
                 myReader.Close();
                 myConnection.Close();
             }
             catch (System.Exception)
             {
-                avisos a = new avisos();
-                a.label1.Text = "Escribe el ID";
-                a.ShowDialog();
+               
+                MessageBox.Show( "Escribe el ID");
+               
             }
         }
 
@@ -197,23 +201,23 @@ namespace venta_de_dispositivos
                 string myConnectionString = "";
                 if (myConnectionString == "")
                 {
-                    myConnectionString = "Database=agenda;Data Source=localhost;UserId=root;Password=";
+                    myConnectionString = "Database=agenda;Data Source=localhost;UserId=admin;Password=admin";
                 }
                 MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-                string myInsertQuery = "DELETE FROM agenda Where id=" + id.Text + "";
+                string myInsertQuery = "DELETE FROM agenda Where id=" + txtid.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                 myCommand.Connection = myConnection;
                 myConnection.Open();
                 myCommand.ExecuteNonQuery();
                 myCommand.Connection.Close();
 
-                avisos a = new avisos();
-                a.label1.Text = "Eliminado Con Éxito";
-                a.ShowDialog();
-                string cad = "Database=agenda;Data Source=localhost;User Id=root;Password=";
+                
+                MessageBox.Show( "Eliminado Con Éxito");
+              
+                string cad = "Database=agenda;Data Source=localhost;User Id=admin;Password=admin";
                 string query = "select * from agenda";
                 MySqlConnection cnn = new MySqlConnection(cad);
-                MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
+                MySqlDataAdapter da = new MySqlDataAdapter(query,cnn);
                 System.Data.DataSet ds = new System.Data.DataSet();
                 da.Fill(ds, "agenda");
                 dataGridView1.DataSource = ds;
@@ -221,9 +225,9 @@ namespace venta_de_dispositivos
             }
             catch (System.Exception)
             {
-                avisos a = new avisos();
-                a.label1.Text = "Hay Campos Vacíos";
-                a.ShowDialog();
+                
+                MessageBox.Show("Hay Campos Vacíos") ;
+                
             }
         }
     }
