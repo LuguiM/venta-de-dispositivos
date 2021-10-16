@@ -125,6 +125,7 @@ namespace venta_de_dispositivos
             this.bprimero.TabIndex = 7;
             this.bprimero.Text = "Primero";
             this.bprimero.UseVisualStyleBackColor = true;
+            this.bprimero.Click += new System.EventHandler(this.bprimero_Click);
             // 
             // banterior
             // 

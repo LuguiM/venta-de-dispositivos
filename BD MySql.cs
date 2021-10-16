@@ -165,7 +165,7 @@ namespace venta_de_dispositivos
                 }
 
                 MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-                string mySelectQuery = "SELECT * From agenda Where id=" + txtid.Text + "";
+                string mySelectQuery = "SELECT * From agenda Where codigo=" + txtid.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(mySelectQuery, myConnection);
 
                 myConnection.Open();
@@ -174,8 +174,8 @@ namespace venta_de_dispositivos
 
                 if (myReader.Read())
                 {
-                    //txtnombre.Text = (myReader.GetString(1));
-                   // txttelefono.Text = (myReader.GetString(2));
+                    txtusuario.Text = (myReader.GetString(1));
+                    lstnivel.Text = (myReader.GetString(2));
                 }
                 else
                 {
@@ -229,6 +229,13 @@ namespace venta_de_dispositivos
                 MessageBox.Show("Hay Campos Vacíos") ;
                 
             }
+        }
+
+        private void bprimero_Click(object sender, EventArgs e)
+        {
+            MySqlConnection first = new MySqlConnection(cadena_conexion);
+
+            string MoveFirst = this.cadena_conexion;
         }
     }
 }
