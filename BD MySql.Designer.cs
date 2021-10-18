@@ -119,7 +119,7 @@ namespace venta_de_dispositivos
             // bprimero
             // 
             this.bprimero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bprimero.Location = new System.Drawing.Point(47, 236);
+            this.bprimero.Location = new System.Drawing.Point(12, 236);
             this.bprimero.Name = "bprimero";
             this.bprimero.Size = new System.Drawing.Size(128, 45);
             this.bprimero.TabIndex = 7;
@@ -130,7 +130,7 @@ namespace venta_de_dispositivos
             // banterior
             // 
             this.banterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.banterior.Location = new System.Drawing.Point(200, 236);
+            this.banterior.Location = new System.Drawing.Point(146, 236);
             this.banterior.Name = "banterior";
             this.banterior.Size = new System.Drawing.Size(128, 45);
             this.banterior.TabIndex = 8;
@@ -140,7 +140,7 @@ namespace venta_de_dispositivos
             // bsiguiente
             // 
             this.bsiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bsiguiente.Location = new System.Drawing.Point(353, 236);
+            this.bsiguiente.Location = new System.Drawing.Point(280, 236);
             this.bsiguiente.Name = "bsiguiente";
             this.bsiguiente.Size = new System.Drawing.Size(128, 45);
             this.bsiguiente.TabIndex = 9;
@@ -150,7 +150,7 @@ namespace venta_de_dispositivos
             // bultimo
             // 
             this.bultimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bultimo.Location = new System.Drawing.Point(507, 236);
+            this.bultimo.Location = new System.Drawing.Point(414, 236);
             this.bultimo.Name = "bultimo";
             this.bultimo.Size = new System.Drawing.Size(128, 45);
             this.bultimo.TabIndex = 10;
@@ -160,7 +160,7 @@ namespace venta_de_dispositivos
             // beliminar
             // 
             this.beliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.beliminar.Location = new System.Drawing.Point(200, 303);
+            this.beliminar.Location = new System.Drawing.Point(146, 302);
             this.beliminar.Name = "beliminar";
             this.beliminar.Size = new System.Drawing.Size(128, 45);
             this.beliminar.TabIndex = 12;
@@ -171,16 +171,18 @@ namespace venta_de_dispositivos
             // bsalir
             // 
             this.bsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bsalir.Location = new System.Drawing.Point(507, 303);
+            this.bsalir.Location = new System.Drawing.Point(414, 303);
             this.bsalir.Name = "bsalir";
             this.bsalir.Size = new System.Drawing.Size(128, 45);
             this.bsalir.TabIndex = 14;
             this.bsalir.Text = "Salir";
             this.bsalir.UseVisualStyleBackColor = true;
+            this.bsalir.Click += new System.EventHandler(this.bsalir_Click);
             // 
             // bguardar
             // 
-            this.bguardar.Location = new System.Drawing.Point(47, 303);
+            this.bguardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bguardar.Location = new System.Drawing.Point(12, 303);
             this.bguardar.Name = "bguardar";
             this.bguardar.Size = new System.Drawing.Size(128, 45);
             this.bguardar.TabIndex = 15;
@@ -190,17 +192,19 @@ namespace venta_de_dispositivos
             // 
             // bactualizar
             // 
-            this.bactualizar.Location = new System.Drawing.Point(353, 303);
+            this.bactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bactualizar.Location = new System.Drawing.Point(280, 302);
             this.bactualizar.Name = "bactualizar";
             this.bactualizar.Size = new System.Drawing.Size(128, 45);
             this.bactualizar.TabIndex = 16;
             this.bactualizar.Text = "Actualizar";
             this.bactualizar.UseVisualStyleBackColor = true;
+            this.bactualizar.Click += new System.EventHandler(this.bactualizar_Click);
             // 
             // bnuevo
             // 
             this.bnuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnuevo.Location = new System.Drawing.Point(47, 302);
+            this.bnuevo.Location = new System.Drawing.Point(12, 303);
             this.bnuevo.Name = "bnuevo";
             this.bnuevo.Size = new System.Drawing.Size(128, 45);
             this.bnuevo.TabIndex = 17;
@@ -211,7 +215,7 @@ namespace venta_de_dispositivos
             // bmodificar
             // 
             this.bmodificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bmodificar.Location = new System.Drawing.Point(353, 302);
+            this.bmodificar.Location = new System.Drawing.Point(280, 287);
             this.bmodificar.Name = "bmodificar";
             this.bmodificar.Size = new System.Drawing.Size(128, 45);
             this.bmodificar.TabIndex = 18;
@@ -222,23 +226,24 @@ namespace venta_de_dispositivos
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(679, 62);
+            this.dataGridView1.Location = new System.Drawing.Point(569, 62);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(297, 286);
+            this.dataGridView1.Size = new System.Drawing.Size(407, 286);
             this.dataGridView1.TabIndex = 19;
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(679, 31);
+            this.txtid.Location = new System.Drawing.Point(569, 29);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(139, 20);
             this.txtid.TabIndex = 20;
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(871, 29);
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(742, 12);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
+            this.button11.Size = new System.Drawing.Size(135, 38);
             this.button11.TabIndex = 21;
             this.button11.Text = "Buscar";
             this.button11.UseVisualStyleBackColor = true;

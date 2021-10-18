@@ -13,6 +13,7 @@ namespace venta_de_dispositivos
         /// </summary>
         [STAThread]
         static void Main()
+        
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
