@@ -215,7 +215,7 @@ namespace venta_de_dispositivos
             // bmodificar
             // 
             this.bmodificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bmodificar.Location = new System.Drawing.Point(280, 287);
+            this.bmodificar.Location = new System.Drawing.Point(280, 303);
             this.bmodificar.Name = "bmodificar";
             this.bmodificar.Size = new System.Drawing.Size(128, 45);
             this.bmodificar.TabIndex = 18;
