@@ -17,7 +17,7 @@ namespace venta_de_dispositivos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BD_MySql());
+            Application.Run(new flogin());
         }
     }
 }

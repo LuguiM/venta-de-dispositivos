@@ -126,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\usuario.jpg" />
+    <None Include="Resources\login-icon.png" />
     <Content Include="sistema.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
