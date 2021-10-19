@@ -16,5 +16,24 @@ namespace venta_de_dispositivos
         {
             InitializeComponent();
         }
+
+        private void usuariosAccesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fusuario fm = new fusuario();
+            fm.Show();
+            
+        }
+
+        private void usuariosMySqlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BD_MySql fm = new BD_MySql();
+            fm.Show();
+            
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
