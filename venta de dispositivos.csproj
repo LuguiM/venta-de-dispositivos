@@ -62,6 +62,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fpc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fpc.Designer.cs">
+      <DependentUpon>Fpc.cs</DependentUpon>
+    </Compile>
     <Compile Include="fusuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fpc.resx">
+      <DependentUpon>Fpc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fusuario.resx">
       <DependentUpon>fusuario.cs</DependentUpon>
@@ -131,6 +140,7 @@
     <None Include="Resources\usuario.jpg" />
     <None Include="Resources\login-icon.png" />
     <None Include="Resources\fondoventa.jpg" />
+    <None Include="Resources\pc fondo.jpg" />
     <Content Include="sistema.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
