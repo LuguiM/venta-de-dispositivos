@@ -83,6 +83,16 @@ namespace venta_de_dispositivos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MicrosoftTeams_image__8_ {
+            get {
+                object obj = ResourceManager.GetObject("MicrosoftTeams-image (8)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pc_fondo {
             get {
                 object obj = ResourceManager.GetObject("pc fondo", resourceCulture);

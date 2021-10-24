@@ -141,6 +141,7 @@
     <None Include="Resources\login-icon.png" />
     <None Include="Resources\fondoventa.jpg" />
     <None Include="Resources\pc fondo.jpg" />
+    <None Include="Resources\MicrosoftTeams-image %288%29.png" />
     <Content Include="sistema.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
