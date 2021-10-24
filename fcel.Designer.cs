@@ -168,24 +168,26 @@ namespace venta_de_dispositivos
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.ForeColor = System.Drawing.Color.Purple;
             this.button1.Location = new System.Drawing.Point(177, 373);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 33);
             this.button1.TabIndex = 11;
             this.button1.Text = "Comprar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button2.ForeColor = System.Drawing.Color.Purple;
             this.button2.Location = new System.Drawing.Point(301, 373);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 33);
             this.button2.TabIndex = 12;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtbuscar
             // 
@@ -197,13 +199,14 @@ namespace venta_de_dispositivos
             // btbbuscar
             // 
             this.btbbuscar.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btbbuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btbbuscar.ForeColor = System.Drawing.Color.Purple;
             this.btbbuscar.Location = new System.Drawing.Point(627, 354);
             this.btbbuscar.Name = "btbbuscar";
             this.btbbuscar.Size = new System.Drawing.Size(172, 29);
             this.btbbuscar.TabIndex = 14;
             this.btbbuscar.Text = "Buscar Producto ";
             this.btbbuscar.UseVisualStyleBackColor = true;
+            this.btbbuscar.Click += new System.EventHandler(this.btbbuscar_Click);
             // 
             // label6
             // 
@@ -242,7 +245,9 @@ namespace venta_de_dispositivos
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "fcel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fcel";
+            this.Load += new System.EventHandler(this.fcel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

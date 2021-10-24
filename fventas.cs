@@ -38,7 +38,26 @@ namespace venta_de_dispositivos
 
         private void button4_Click(object sender, EventArgs e)
         {
+            faccesorios fm = new faccesorios();
+            fm.Show();
+        }
 
+        private void btbcel_Click(object sender, EventArgs e)
+        {
+            fcel fm = new fcel();
+            fm.Show();
+        }
+
+        private void btbpc_Click(object sender, EventArgs e)
+        {
+            Fpc fm = new Fpc();
+            fm.Show();
+        }
+
+        private void btblaptop_Click(object sender, EventArgs e)
+        {
+            flaptop fm = new flaptop();
+            fm.Show();
         }
     }
 }

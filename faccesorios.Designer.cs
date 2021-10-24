@@ -35,16 +35,16 @@ namespace venta_de_dispositivos
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtproducto = new System.Windows.Forms.TextBox();
+            this.txtcaracteristicas = new System.Windows.Forms.TextBox();
+            this.txtprecio = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -105,27 +105,27 @@ namespace venta_de_dispositivos
             this.dataGridView1.Size = new System.Drawing.Size(274, 266);
             this.dataGridView1.TabIndex = 4;
             // 
-            // textBox1
+            // txtproducto
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtproducto.Location = new System.Drawing.Point(12, 110);
+            this.txtproducto.Name = "txtproducto";
+            this.txtproducto.Size = new System.Drawing.Size(118, 20);
+            this.txtproducto.TabIndex = 5;
             // 
-            // textBox2
+            // txtcaracteristicas
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 171);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(118, 80);
-            this.textBox2.TabIndex = 6;
+            this.txtcaracteristicas.Location = new System.Drawing.Point(12, 171);
+            this.txtcaracteristicas.Multiline = true;
+            this.txtcaracteristicas.Name = "txtcaracteristicas";
+            this.txtcaracteristicas.Size = new System.Drawing.Size(118, 80);
+            this.txtcaracteristicas.TabIndex = 6;
             // 
-            // textBox3
+            // txtprecio
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 284);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(93, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtprecio.Location = new System.Drawing.Point(12, 284);
+            this.txtprecio.Name = "txtprecio";
+            this.txtprecio.Size = new System.Drawing.Size(93, 20);
+            this.txtprecio.TabIndex = 7;
             // 
             // label5
             // 
@@ -135,9 +135,9 @@ namespace venta_de_dispositivos
             this.label5.ForeColor = System.Drawing.Color.Yellow;
             this.label5.Location = new System.Drawing.Point(7, 326);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 50);
+            this.label5.Size = new System.Drawing.Size(149, 50);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Desea servicio\r\n adomicilio ";
+            this.label5.Text = "¿Desea servicio\r\n adomicilio? ";
             // 
             // checkBox1
             // 
@@ -176,6 +176,7 @@ namespace venta_de_dispositivos
             this.button1.TabIndex = 11;
             this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -187,6 +188,7 @@ namespace venta_de_dispositivos
             this.button2.TabIndex = 12;
             this.button2.Text = "Cancelar ";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -198,13 +200,14 @@ namespace venta_de_dispositivos
             this.button3.TabIndex = 13;
             this.button3.Text = "Buscar Producto ";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox4
+            // txtbuscar
             // 
-            this.textBox4.Location = new System.Drawing.Point(514, 387);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(129, 20);
-            this.textBox4.TabIndex = 14;
+            this.txtbuscar.Location = new System.Drawing.Point(514, 387);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(129, 20);
+            this.txtbuscar.TabIndex = 14;
             // 
             // label6
             // 
@@ -226,23 +229,25 @@ namespace venta_de_dispositivos
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(852, 442);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtprecio);
+            this.Controls.Add(this.txtcaracteristicas);
+            this.Controls.Add(this.txtproducto);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "faccesorios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "faccesorios";
+            this.Load += new System.EventHandler(this.faccesorios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -256,16 +261,16 @@ namespace venta_de_dispositivos
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtproducto;
+        private System.Windows.Forms.TextBox txtcaracteristicas;
+        private System.Windows.Forms.TextBox txtprecio;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.Label label6;
     }
 }

@@ -53,8 +53,8 @@ namespace venta_de_dispositivos
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Matura MT Script Capitals", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(289, 9);
+            this.label1.ForeColor = System.Drawing.Color.Crimson;
+            this.label1.Location = new System.Drawing.Point(274, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(238, 28);
             this.label1.TabIndex = 0;
@@ -136,25 +136,26 @@ namespace venta_de_dispositivos
             // 
             // btbcomprar
             // 
-            this.btbcomprar.BackColor = System.Drawing.Color.Transparent;
+            this.btbcomprar.BackColor = System.Drawing.Color.White;
             this.btbcomprar.Font = new System.Drawing.Font("Matura MT Script Capitals", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btbcomprar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btbcomprar.ForeColor = System.Drawing.Color.Crimson;
             this.btbcomprar.Location = new System.Drawing.Point(227, 440);
             this.btbcomprar.Name = "btbcomprar";
             this.btbcomprar.Size = new System.Drawing.Size(87, 30);
             this.btbcomprar.TabIndex = 9;
             this.btbcomprar.Text = "Comprar";
             this.btbcomprar.UseVisualStyleBackColor = false;
+            this.btbcomprar.Click += new System.EventHandler(this.btbcomprar_Click);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("Matura MT Script Capitals", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.checkBox1.Location = new System.Drawing.Point(32, 426);
+            this.checkBox1.Location = new System.Drawing.Point(29, 457);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(42, 26);
+            this.checkBox1.Size = new System.Drawing.Size(47, 29);
             this.checkBox1.TabIndex = 10;
             this.checkBox1.Text = "si";
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -163,23 +164,24 @@ namespace venta_de_dispositivos
             // 
             this.btbcancelar.BackColor = System.Drawing.Color.Transparent;
             this.btbcancelar.Font = new System.Drawing.Font("Matura MT Script Capitals", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btbcancelar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btbcancelar.ForeColor = System.Drawing.Color.Crimson;
             this.btbcancelar.Location = new System.Drawing.Point(320, 440);
             this.btbcancelar.Name = "btbcancelar";
             this.btbcancelar.Size = new System.Drawing.Size(75, 30);
             this.btbcancelar.TabIndex = 11;
             this.btbcancelar.Text = "Cancelar ";
             this.btbcancelar.UseVisualStyleBackColor = false;
+            this.btbcancelar.Click += new System.EventHandler(this.btbcancelar_Click);
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Font = new System.Drawing.Font("Matura MT Script Capitals", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.checkBox2.Location = new System.Drawing.Point(32, 456);
+            this.checkBox2.Location = new System.Drawing.Point(77, 457);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(45, 26);
+            this.checkBox2.Size = new System.Drawing.Size(50, 29);
             this.checkBox2.TabIndex = 12;
             this.checkBox2.Text = "no";
             this.checkBox2.UseVisualStyleBackColor = false;
@@ -188,25 +190,25 @@ namespace venta_de_dispositivos
             // 
             this.btbbuscar.BackColor = System.Drawing.Color.Transparent;
             this.btbbuscar.Font = new System.Drawing.Font("Matura MT Script Capitals", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btbbuscar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btbbuscar.ForeColor = System.Drawing.Color.Crimson;
             this.btbbuscar.Location = new System.Drawing.Point(623, 400);
             this.btbbuscar.Name = "btbbuscar";
             this.btbbuscar.Size = new System.Drawing.Size(141, 40);
             this.btbbuscar.TabIndex = 13;
             this.btbbuscar.Text = "Buscar producto ";
             this.btbbuscar.UseVisualStyleBackColor = false;
+            this.btbbuscar.Click += new System.EventHandler(this.btbbuscar_Click);
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label5.Location = new System.Drawing.Point(13, 381);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(237, 25);
+            this.label5.Size = new System.Drawing.Size(163, 59);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Desea servicio adomicilio ";
+            this.label5.Text = "¿Desea servicio adomicilio? ";
             // 
             // label6
             // 
@@ -244,7 +246,9 @@ namespace venta_de_dispositivos
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "flaptop";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "flaptop";
+            this.Load += new System.EventHandler(this.flaptop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
