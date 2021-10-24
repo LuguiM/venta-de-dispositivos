@@ -35,5 +35,10 @@ namespace venta_de_dispositivos
         {
             Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
