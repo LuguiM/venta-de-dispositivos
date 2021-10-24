@@ -44,6 +44,7 @@ namespace venta_de_dispositivos
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.btbbuscar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,29 +63,39 @@ namespace venta_de_dispositivos
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 100);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Adobe Devanagari", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label2.Location = new System.Drawing.Point(12, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(146, 22);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Producto seleccionado";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label3.Location = new System.Drawing.Point(13, 161);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(118, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.label3.Text = "Caracteristicas ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 311);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label4.Location = new System.Drawing.Point(12, 318);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(53, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.label4.Text = "Precio";
             // 
             // dataGridView1
             // 
@@ -125,59 +136,88 @@ namespace venta_de_dispositivos
             // 
             // btbcomprar
             // 
-            this.btbcomprar.Location = new System.Drawing.Point(201, 445);
+            this.btbcomprar.BackColor = System.Drawing.Color.Transparent;
+            this.btbcomprar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btbcomprar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btbcomprar.Location = new System.Drawing.Point(227, 440);
             this.btbcomprar.Name = "btbcomprar";
-            this.btbcomprar.Size = new System.Drawing.Size(75, 23);
+            this.btbcomprar.Size = new System.Drawing.Size(87, 30);
             this.btbcomprar.TabIndex = 9;
-            this.btbcomprar.Text = "button1";
-            this.btbcomprar.UseVisualStyleBackColor = true;
+            this.btbcomprar.Text = "Comprar";
+            this.btbcomprar.UseVisualStyleBackColor = false;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(32, 433);
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.checkBox1.Location = new System.Drawing.Point(32, 426);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.Size = new System.Drawing.Size(39, 24);
             this.checkBox1.TabIndex = 10;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.Text = "si";
+            this.checkBox1.UseVisualStyleBackColor = false;
             // 
             // btbcancelar
             // 
-            this.btbcancelar.Location = new System.Drawing.Point(294, 444);
+            this.btbcancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btbcancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btbcancelar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btbcancelar.Location = new System.Drawing.Point(320, 440);
             this.btbcancelar.Name = "btbcancelar";
-            this.btbcancelar.Size = new System.Drawing.Size(75, 23);
+            this.btbcancelar.Size = new System.Drawing.Size(75, 30);
             this.btbcancelar.TabIndex = 11;
-            this.btbcancelar.Text = "button2";
-            this.btbcancelar.UseVisualStyleBackColor = true;
+            this.btbcancelar.Text = "Cancelar ";
+            this.btbcancelar.UseVisualStyleBackColor = false;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
+            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.checkBox2.Location = new System.Drawing.Point(32, 456);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
+            this.checkBox2.Size = new System.Drawing.Size(46, 24);
             this.checkBox2.TabIndex = 12;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.Text = "no";
+            this.checkBox2.UseVisualStyleBackColor = false;
             // 
             // btbbuscar
             // 
-            this.btbbuscar.Location = new System.Drawing.Point(637, 410);
+            this.btbbuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btbbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btbbuscar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btbbuscar.Location = new System.Drawing.Point(623, 400);
             this.btbbuscar.Name = "btbbuscar";
-            this.btbbuscar.Size = new System.Drawing.Size(75, 23);
+            this.btbbuscar.Size = new System.Drawing.Size(141, 40);
             this.btbbuscar.TabIndex = 13;
-            this.btbbuscar.Text = "button3";
-            this.btbbuscar.UseVisualStyleBackColor = true;
+            this.btbbuscar.Text = "Buscar producto ";
+            this.btbbuscar.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label5.Location = new System.Drawing.Point(13, 381);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(189, 20);
             this.label5.TabIndex = 14;
-            this.label5.Text = "label5";
+            this.label5.Text = "Desea servicio adomicilio ";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.button1.Location = new System.Drawing.Point(576, 64);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 30);
+            this.button1.TabIndex = 15;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // flaptop
             // 
@@ -186,6 +226,7 @@ namespace venta_de_dispositivos
             this.BackgroundImage = global::venta_de_dispositivos.Properties.Resources.MicrosoftTeams_image__9_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 495);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btbbuscar);
             this.Controls.Add(this.checkBox2);
@@ -226,5 +267,6 @@ namespace venta_de_dispositivos
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Button btbbuscar;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
     }
 }
