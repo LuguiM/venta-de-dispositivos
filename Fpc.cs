@@ -25,6 +25,7 @@ namespace venta_de_dispositivos
         {
             txtproducto.Enabled = false;
             txtprecio.Enabled = false;
+            txtcaracteristicas.Enabled = false;
 
             try
             {
@@ -60,8 +61,10 @@ namespace venta_de_dispositivos
                 if (myReader.Read())
                 {
                     txtproducto.Text = (myReader.GetString(1));
-                    txtprecio.Text = (myReader.GetString(2));
+                    txtcaracteristicas.Text = (myReader.GetString(2));
+                    txtprecio.Text = (myReader.GetString(3));
                     
+
                 }
                 else
                 {

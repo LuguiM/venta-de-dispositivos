@@ -43,6 +43,8 @@ namespace venta_de_dispositivos
             this.txtsi = new System.Windows.Forms.CheckBox();
             this.txtno = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtcaracteristicas = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +63,7 @@ namespace venta_de_dispositivos
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(416, 110);
+            this.dataGridView1.Location = new System.Drawing.Point(416, 83);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(372, 271);
             this.dataGridView1.TabIndex = 1;
@@ -72,7 +74,7 @@ namespace venta_de_dispositivos
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(549, 83);
+            this.label2.Location = new System.Drawing.Point(552, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 25);
             this.label2.TabIndex = 2;
@@ -80,7 +82,7 @@ namespace venta_de_dispositivos
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(416, 402);
+            this.txtbuscar.Location = new System.Drawing.Point(416, 367);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(166, 20);
             this.txtbuscar.TabIndex = 3;
@@ -90,7 +92,7 @@ namespace venta_de_dispositivos
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Matura MT Script Capitals", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Maroon;
-            this.button1.Location = new System.Drawing.Point(598, 392);
+            this.button1.Location = new System.Drawing.Point(598, 360);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 36);
             this.button1.TabIndex = 4;
@@ -104,7 +106,7 @@ namespace venta_de_dispositivos
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(7, 110);
+            this.label3.Location = new System.Drawing.Point(12, 83);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(200, 25);
             this.label3.TabIndex = 5;
@@ -116,7 +118,7 @@ namespace venta_de_dispositivos
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(12, 184);
+            this.label4.Location = new System.Drawing.Point(12, 262);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 25);
             this.label4.TabIndex = 6;
@@ -124,14 +126,14 @@ namespace venta_de_dispositivos
             // 
             // txtproducto
             // 
-            this.txtproducto.Location = new System.Drawing.Point(16, 144);
+            this.txtproducto.Location = new System.Drawing.Point(17, 111);
             this.txtproducto.Name = "txtproducto";
             this.txtproducto.Size = new System.Drawing.Size(176, 20);
             this.txtproducto.TabIndex = 7;
             // 
             // txtprecio
             // 
-            this.txtprecio.Location = new System.Drawing.Point(16, 214);
+            this.txtprecio.Location = new System.Drawing.Point(17, 290);
             this.txtprecio.Name = "txtprecio";
             this.txtprecio.Size = new System.Drawing.Size(100, 20);
             this.txtprecio.TabIndex = 8;
@@ -141,7 +143,7 @@ namespace venta_de_dispositivos
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.Font = new System.Drawing.Font("Matura MT Script Capitals", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Maroon;
-            this.button2.Location = new System.Drawing.Point(17, 399);
+            this.button2.Location = new System.Drawing.Point(188, 393);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(86, 29);
             this.button2.TabIndex = 9;
@@ -154,7 +156,7 @@ namespace venta_de_dispositivos
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.Font = new System.Drawing.Font("Matura MT Script Capitals", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Maroon;
-            this.button3.Location = new System.Drawing.Point(121, 399);
+            this.button3.Location = new System.Drawing.Point(300, 392);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(86, 29);
             this.button3.TabIndex = 10;
@@ -168,7 +170,7 @@ namespace venta_de_dispositivos
             this.txtsi.BackColor = System.Drawing.Color.Transparent;
             this.txtsi.Font = new System.Drawing.Font("Matura MT Script Capitals", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsi.ForeColor = System.Drawing.Color.Maroon;
-            this.txtsi.Location = new System.Drawing.Point(28, 293);
+            this.txtsi.Location = new System.Drawing.Point(26, 401);
             this.txtsi.Name = "txtsi";
             this.txtsi.Size = new System.Drawing.Size(43, 21);
             this.txtsi.TabIndex = 11;
@@ -181,7 +183,7 @@ namespace venta_de_dispositivos
             this.txtno.BackColor = System.Drawing.Color.Transparent;
             this.txtno.Font = new System.Drawing.Font("Matura MT Script Capitals", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtno.ForeColor = System.Drawing.Color.Maroon;
-            this.txtno.Location = new System.Drawing.Point(28, 316);
+            this.txtno.Location = new System.Drawing.Point(75, 401);
             this.txtno.Name = "txtno";
             this.txtno.Size = new System.Drawing.Size(52, 21);
             this.txtno.TabIndex = 12;
@@ -193,11 +195,31 @@ namespace venta_de_dispositivos
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Matura MT Script Capitals", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Maroon;
-            this.label5.Location = new System.Drawing.Point(8, 246);
+            this.label5.Location = new System.Drawing.Point(12, 330);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(245, 44);
+            this.label5.Size = new System.Drawing.Size(143, 68);
             this.label5.TabIndex = 13;
             this.label5.Text = "¿Desea servicio servicio a domicilio?";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Maroon;
+            this.label6.Location = new System.Drawing.Point(12, 147);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(143, 25);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Caracteristicas:";
+            // 
+            // txtcaracteristicas
+            // 
+            this.txtcaracteristicas.Location = new System.Drawing.Point(17, 175);
+            this.txtcaracteristicas.Multiline = true;
+            this.txtcaracteristicas.Name = "txtcaracteristicas";
+            this.txtcaracteristicas.Size = new System.Drawing.Size(176, 84);
+            this.txtcaracteristicas.TabIndex = 15;
             // 
             // Fpc
             // 
@@ -206,6 +228,8 @@ namespace venta_de_dispositivos
             this.BackgroundImage = global::venta_de_dispositivos.Properties.Resources.MicrosoftTeams_image__8_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtcaracteristicas);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtno);
             this.Controls.Add(this.txtsi);
@@ -246,5 +270,7 @@ namespace venta_de_dispositivos
         private System.Windows.Forms.CheckBox txtsi;
         private System.Windows.Forms.CheckBox txtno;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtcaracteristicas;
     }
 }

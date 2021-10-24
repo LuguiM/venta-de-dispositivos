@@ -56,6 +56,24 @@
     <Compile Include="BD MySql.Designer.cs">
       <DependentUpon>BD MySql.cs</DependentUpon>
     </Compile>
+    <Compile Include="faccesorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="faccesorios.Designer.cs">
+      <DependentUpon>faccesorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fcel.Designer.cs">
+      <DependentUpon>fcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="flaptop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flaptop.Designer.cs">
+      <DependentUpon>flaptop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +107,15 @@
     </Compile>
     <EmbeddedResource Include="BD MySql.resx">
       <DependentUpon>BD MySql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="faccesorios.resx">
+      <DependentUpon>faccesorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fcel.resx">
+      <DependentUpon>fcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flaptop.resx">
+      <DependentUpon>flaptop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -142,6 +169,8 @@
     <None Include="Resources\fondoventa.jpg" />
     <None Include="Resources\pc fondo.jpg" />
     <None Include="Resources\MicrosoftTeams-image %288%29.png" />
+    <None Include="Resources\MicrosoftTeams-image %289%29.png" />
+    <None Include="Resources\MicrosoftTeams-image %2810%29.png" />
     <Content Include="sistema.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

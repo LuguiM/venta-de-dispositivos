@@ -83,9 +83,29 @@ namespace venta_de_dispositivos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MicrosoftTeams_image__10_ {
+            get {
+                object obj = ResourceManager.GetObject("MicrosoftTeams-image (10)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MicrosoftTeams_image__8_ {
             get {
                 object obj = ResourceManager.GetObject("MicrosoftTeams-image (8)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MicrosoftTeams_image__9_ {
+            get {
+                object obj = ResourceManager.GetObject("MicrosoftTeams-image (9)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
