@@ -44,7 +44,6 @@ namespace venta_de_dispositivos
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.btbbuscar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -208,17 +207,6 @@ namespace venta_de_dispositivos
             this.label5.TabIndex = 14;
             this.label5.Text = "Desea servicio adomicilio ";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.Location = new System.Drawing.Point(576, 64);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 30);
-            this.button1.TabIndex = 15;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // flaptop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,7 +214,6 @@ namespace venta_de_dispositivos
             this.BackgroundImage = global::venta_de_dispositivos.Properties.Resources.MicrosoftTeams_image__9_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 495);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btbbuscar);
             this.Controls.Add(this.checkBox2);
@@ -267,6 +254,5 @@ namespace venta_de_dispositivos
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Button btbbuscar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
     }
 }
