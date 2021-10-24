@@ -82,7 +82,8 @@ namespace venta_de_dispositivos
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("¿Esta Seguro de Comprar este Producto?", "COMPRA",MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            MessageBox.Show("La Compra del Producto: "+ txtproducto.Text+ " se Realizo Correctamente" , "COMPRA");
         }
 
         private void button3_Click(object sender, EventArgs e)
