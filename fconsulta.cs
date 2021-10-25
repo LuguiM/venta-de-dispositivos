@@ -42,5 +42,10 @@ namespace venta_de_dispositivos
                 MessageBox.Show("Error de conexion", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void bvolver_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

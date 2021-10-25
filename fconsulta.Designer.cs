@@ -65,6 +65,7 @@ namespace venta_de_dispositivos
             this.bvolver.TabIndex = 2;
             this.bvolver.Text = "Volver";
             this.bvolver.UseVisualStyleBackColor = true;
+            this.bvolver.Click += new System.EventHandler(this.bvolver_Click);
             // 
             // fconsulta
             // 
