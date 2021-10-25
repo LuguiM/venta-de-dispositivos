@@ -70,6 +70,12 @@
     <Compile Include="fcel.Designer.cs">
       <DependentUpon>fcel.cs</DependentUpon>
     </Compile>
+    <Compile Include="fempleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fempleados.Designer.cs">
+      <DependentUpon>fempleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="flaptop.cs">
       <SubType>Form</SubType>
     </Compile>
