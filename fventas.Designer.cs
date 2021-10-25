@@ -43,6 +43,7 @@ namespace venta_de_dispositivos
             this.btblaptop = new System.Windows.Forms.Button();
             this.btbacce = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -55,6 +56,7 @@ namespace venta_de_dispositivos
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.menuStrip1.Font = new System.Drawing.Font("Matura MT Script Capitals", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.empleadosToolStripMenuItem,
             this.usuariosAccesToolStripMenuItem,
             this.usuariosMySqlToolStripMenuItem,
             this.salirToolStripMenuItem});
@@ -188,6 +190,14 @@ namespace venta_de_dispositivos
             this.label1.TabIndex = 9;
             this.label1.Text = "Venta de Dispositivos Tecnologicos";
             // 
+            // empleadosToolStripMenuItem
+            // 
+            this.empleadosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
+            this.empleadosToolStripMenuItem.Text = "Empleados";
+            this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
+            // 
             // fventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,5 +244,6 @@ namespace venta_de_dispositivos
         private System.Windows.Forms.Button btblaptop;
         private System.Windows.Forms.Button btbacce;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
     }
 }

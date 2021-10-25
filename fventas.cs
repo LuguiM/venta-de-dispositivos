@@ -59,5 +59,11 @@ namespace venta_de_dispositivos
             flaptop fm = new flaptop();
             fm.Show();
         }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fempleados fm = new fempleados();
+            fm.Show();
+        }
     }
 }
