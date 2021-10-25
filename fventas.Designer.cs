@@ -90,27 +90,35 @@ namespace venta_de_dispositivos
             // 
             // pCsToolStripMenuItem
             // 
+            this.pCsToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.pCsToolStripMenuItem.Name = "pCsToolStripMenuItem";
-            this.pCsToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
+            this.pCsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.pCsToolStripMenuItem.Text = "PCs";
+            this.pCsToolStripMenuItem.Click += new System.EventHandler(this.pCsToolStripMenuItem_Click);
             // 
             // laptopToolStripMenuItem
             // 
+            this.laptopToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.laptopToolStripMenuItem.Name = "laptopToolStripMenuItem";
-            this.laptopToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
+            this.laptopToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.laptopToolStripMenuItem.Text = "Laptop";
+            this.laptopToolStripMenuItem.Click += new System.EventHandler(this.laptopToolStripMenuItem_Click);
             // 
             // celularesToolStripMenuItem
             // 
+            this.celularesToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.celularesToolStripMenuItem.Name = "celularesToolStripMenuItem";
-            this.celularesToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
+            this.celularesToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.celularesToolStripMenuItem.Text = "Celulares";
+            this.celularesToolStripMenuItem.Click += new System.EventHandler(this.celularesToolStripMenuItem_Click);
             // 
             // accesoriosToolStripMenuItem
             // 
+            this.accesoriosToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.accesoriosToolStripMenuItem.Name = "accesoriosToolStripMenuItem";
-            this.accesoriosToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
+            this.accesoriosToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.accesoriosToolStripMenuItem.Text = "Accesorios";
+            this.accesoriosToolStripMenuItem.Click += new System.EventHandler(this.accesoriosToolStripMenuItem_Click);
             // 
             // empleadosToolStripMenuItem
             // 

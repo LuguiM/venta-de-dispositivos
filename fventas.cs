@@ -77,5 +77,29 @@ namespace venta_de_dispositivos
             ayuda fm = new ayuda();
             fm.Show();
         }
+
+        private void pCsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fpc fm = new Fpc();
+            fm.Show();
+        }
+
+        private void laptopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            flaptop fm = new flaptop();
+            fm.Show();
+        }
+
+        private void celularesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fcel fm = new fcel();
+            fm.Show();
+        }
+
+        private void accesoriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            faccesorios fm = new faccesorios();
+            fm.Show();
+        }
     }
 }
