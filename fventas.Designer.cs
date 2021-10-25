@@ -31,9 +31,11 @@ namespace venta_de_dispositivos
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fventas));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosAccesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosMySqlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btbcel = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -43,7 +45,11 @@ namespace venta_de_dispositivos
             this.btblaptop = new System.Windows.Forms.Button();
             this.btbacce = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pCsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laptopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.celularesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.accesoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -56,7 +62,9 @@ namespace venta_de_dispositivos
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.menuStrip1.Font = new System.Drawing.Font("Matura MT Script Capitals", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.productosToolStripMenuItem,
             this.empleadosToolStripMenuItem,
+            this.toolStripMenuItem1,
             this.usuariosAccesToolStripMenuItem,
             this.usuariosMySqlToolStripMenuItem,
             this.salirToolStripMenuItem});
@@ -65,6 +73,14 @@ namespace venta_de_dispositivos
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // empleadosToolStripMenuItem
+            // 
+            this.empleadosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
+            this.empleadosToolStripMenuItem.Text = "Empleados";
+            this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
             // usuariosAccesToolStripMenuItem
             // 
@@ -89,6 +105,14 @@ namespace venta_de_dispositivos
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(85, 24);
+            this.toolStripMenuItem1.Text = "Acercade";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // btbcel
             // 
@@ -190,13 +214,41 @@ namespace venta_de_dispositivos
             this.label1.TabIndex = 9;
             this.label1.Text = "Venta de Dispositivos Tecnologicos";
             // 
-            // empleadosToolStripMenuItem
+            // productosToolStripMenuItem
             // 
-            this.empleadosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
-            this.empleadosToolStripMenuItem.Text = "Empleados";
-            this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
+            this.productosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pCsToolStripMenuItem,
+            this.laptopToolStripMenuItem,
+            this.celularesToolStripMenuItem,
+            this.accesoriosToolStripMenuItem});
+            this.productosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
+            this.productosToolStripMenuItem.Text = "Productos";
+            // 
+            // pCsToolStripMenuItem
+            // 
+            this.pCsToolStripMenuItem.Name = "pCsToolStripMenuItem";
+            this.pCsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.pCsToolStripMenuItem.Text = "PCs";
+            // 
+            // laptopToolStripMenuItem
+            // 
+            this.laptopToolStripMenuItem.Name = "laptopToolStripMenuItem";
+            this.laptopToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.laptopToolStripMenuItem.Text = "Laptop";
+            // 
+            // celularesToolStripMenuItem
+            // 
+            this.celularesToolStripMenuItem.Name = "celularesToolStripMenuItem";
+            this.celularesToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.celularesToolStripMenuItem.Text = "Celulares";
+            // 
+            // accesoriosToolStripMenuItem
+            // 
+            this.accesoriosToolStripMenuItem.Name = "accesoriosToolStripMenuItem";
+            this.accesoriosToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.accesoriosToolStripMenuItem.Text = "Accesorios";
             // 
             // fventas
             // 
@@ -245,5 +297,11 @@ namespace venta_de_dispositivos
         private System.Windows.Forms.Button btbacce;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pCsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem laptopToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem celularesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem accesoriosToolStripMenuItem;
     }
 }

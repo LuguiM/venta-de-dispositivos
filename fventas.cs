@@ -65,5 +65,11 @@ namespace venta_de_dispositivos
             fempleados fm = new fempleados();
             fm.Show();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            acercade fm = new acercade();
+            fm.Show();
+        }
     }
 }
