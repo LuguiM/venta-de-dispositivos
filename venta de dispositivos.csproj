@@ -82,6 +82,12 @@
     <Compile Include="fcel.Designer.cs">
       <DependentUpon>fcel.cs</DependentUpon>
     </Compile>
+    <Compile Include="fconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fconsulta.Designer.cs">
+      <DependentUpon>fconsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="fempleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,11 +100,11 @@
     <Compile Include="flaptop.Designer.cs">
       <DependentUpon>flaptop.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="flogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="flogin.Designer.cs">
+      <DependentUpon>flogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Fpc.cs">
       <SubType>Form</SubType>
@@ -140,14 +146,17 @@
     <EmbeddedResource Include="fcel.resx">
       <DependentUpon>fcel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fconsulta.resx">
+      <DependentUpon>fconsulta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fempleados.resx">
       <DependentUpon>fempleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="flaptop.resx">
       <DependentUpon>flaptop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="flogin.resx">
+      <DependentUpon>flogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fpc.resx">
       <DependentUpon>Fpc.cs</DependentUpon>

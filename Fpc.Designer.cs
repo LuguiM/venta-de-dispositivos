@@ -45,6 +45,7 @@ namespace venta_de_dispositivos
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtcaracteristicas = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -221,6 +222,18 @@ namespace venta_de_dispositivos
             this.txtcaracteristicas.Size = new System.Drawing.Size(176, 84);
             this.txtcaracteristicas.TabIndex = 15;
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Matura MT Script Capitals", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.DarkBlue;
+            this.button4.Location = new System.Drawing.Point(598, 398);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(151, 40);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "Consulta Producto";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Fpc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,6 +241,7 @@ namespace venta_de_dispositivos
             this.BackgroundImage = global::venta_de_dispositivos.Properties.Resources.MicrosoftTeams_image__8_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.txtcaracteristicas);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -272,5 +286,6 @@ namespace venta_de_dispositivos
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtcaracteristicas;
+        private System.Windows.Forms.Button button4;
     }
 }
