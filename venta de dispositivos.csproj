@@ -58,6 +58,12 @@
     <Compile Include="acercade.Designer.cs">
       <DependentUpon>acercade.cs</DependentUpon>
     </Compile>
+    <Compile Include="ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayuda.Designer.cs">
+      <DependentUpon>ayuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="BD MySql.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     </Compile>
     <EmbeddedResource Include="acercade.resx">
       <DependentUpon>acercade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ayuda.resx">
+      <DependentUpon>ayuda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BD MySql.resx">
       <DependentUpon>BD MySql.cs</DependentUpon>

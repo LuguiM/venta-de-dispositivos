@@ -71,5 +71,11 @@ namespace venta_de_dispositivos
             acercade fm = new acercade();
             fm.Show();
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ayuda fm = new ayuda();
+            fm.Show();
+        }
     }
 }

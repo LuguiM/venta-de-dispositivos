@@ -31,11 +31,17 @@ namespace venta_de_dispositivos
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fventas));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pCsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laptopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.celularesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.accesoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosAccesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosMySqlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.btbcel = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -45,11 +51,6 @@ namespace venta_de_dispositivos
             this.btblaptop = new System.Windows.Forms.Button();
             this.btbacce = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pCsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laptopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.celularesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.accesoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -64,6 +65,7 @@ namespace venta_de_dispositivos
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productosToolStripMenuItem,
             this.empleadosToolStripMenuItem,
+            this.toolStripMenuItem2,
             this.toolStripMenuItem1,
             this.usuariosAccesToolStripMenuItem,
             this.usuariosMySqlToolStripMenuItem,
@@ -74,6 +76,42 @@ namespace venta_de_dispositivos
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // productosToolStripMenuItem
+            // 
+            this.productosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pCsToolStripMenuItem,
+            this.laptopToolStripMenuItem,
+            this.celularesToolStripMenuItem,
+            this.accesoriosToolStripMenuItem});
+            this.productosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
+            this.productosToolStripMenuItem.Text = "Productos";
+            // 
+            // pCsToolStripMenuItem
+            // 
+            this.pCsToolStripMenuItem.Name = "pCsToolStripMenuItem";
+            this.pCsToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
+            this.pCsToolStripMenuItem.Text = "PCs";
+            // 
+            // laptopToolStripMenuItem
+            // 
+            this.laptopToolStripMenuItem.Name = "laptopToolStripMenuItem";
+            this.laptopToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
+            this.laptopToolStripMenuItem.Text = "Laptop";
+            // 
+            // celularesToolStripMenuItem
+            // 
+            this.celularesToolStripMenuItem.Name = "celularesToolStripMenuItem";
+            this.celularesToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
+            this.celularesToolStripMenuItem.Text = "Celulares";
+            // 
+            // accesoriosToolStripMenuItem
+            // 
+            this.accesoriosToolStripMenuItem.Name = "accesoriosToolStripMenuItem";
+            this.accesoriosToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
+            this.accesoriosToolStripMenuItem.Text = "Accesorios";
+            // 
             // empleadosToolStripMenuItem
             // 
             this.empleadosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -81,6 +119,14 @@ namespace venta_de_dispositivos
             this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(85, 24);
+            this.toolStripMenuItem1.Text = "Acercade";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // usuariosAccesToolStripMenuItem
             // 
@@ -106,18 +152,18 @@ namespace venta_de_dispositivos
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
-            // toolStripMenuItem1
+            // toolStripMenuItem2
             // 
-            this.toolStripMenuItem1.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(85, 24);
-            this.toolStripMenuItem1.Text = "Acercade";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(70, 24);
+            this.toolStripMenuItem2.Text = "Ayuda";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // btbcel
             // 
             this.btbcel.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btbcel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btbcel.ForeColor = System.Drawing.Color.Blue;
             this.btbcel.Location = new System.Drawing.Point(64, 171);
             this.btbcel.Name = "btbcel";
             this.btbcel.Size = new System.Drawing.Size(111, 32);
@@ -169,19 +215,19 @@ namespace venta_de_dispositivos
             // btbpc
             // 
             this.btbpc.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btbpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btbpc.ForeColor = System.Drawing.Color.Blue;
             this.btbpc.Location = new System.Drawing.Point(64, 371);
             this.btbpc.Name = "btbpc";
             this.btbpc.Size = new System.Drawing.Size(87, 31);
             this.btbpc.TabIndex = 6;
-            this.btbpc.Text = "PCS";
+            this.btbpc.Text = "PCs";
             this.btbpc.UseVisualStyleBackColor = true;
             this.btbpc.Click += new System.EventHandler(this.btbpc_Click);
             // 
             // btblaptop
             // 
             this.btblaptop.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btblaptop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btblaptop.ForeColor = System.Drawing.Color.Blue;
             this.btblaptop.Location = new System.Drawing.Point(612, 170);
             this.btblaptop.Name = "btblaptop";
             this.btblaptop.Size = new System.Drawing.Size(102, 33);
@@ -193,7 +239,7 @@ namespace venta_de_dispositivos
             // btbacce
             // 
             this.btbacce.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btbacce.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btbacce.ForeColor = System.Drawing.Color.Blue;
             this.btbacce.Location = new System.Drawing.Point(598, 371);
             this.btbacce.Name = "btbacce";
             this.btbacce.Size = new System.Drawing.Size(134, 31);
@@ -213,42 +259,6 @@ namespace venta_de_dispositivos
             this.label1.Size = new System.Drawing.Size(363, 25);
             this.label1.TabIndex = 9;
             this.label1.Text = "Venta de Dispositivos Tecnologicos";
-            // 
-            // productosToolStripMenuItem
-            // 
-            this.productosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pCsToolStripMenuItem,
-            this.laptopToolStripMenuItem,
-            this.celularesToolStripMenuItem,
-            this.accesoriosToolStripMenuItem});
-            this.productosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
-            this.productosToolStripMenuItem.Text = "Productos";
-            // 
-            // pCsToolStripMenuItem
-            // 
-            this.pCsToolStripMenuItem.Name = "pCsToolStripMenuItem";
-            this.pCsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.pCsToolStripMenuItem.Text = "PCs";
-            // 
-            // laptopToolStripMenuItem
-            // 
-            this.laptopToolStripMenuItem.Name = "laptopToolStripMenuItem";
-            this.laptopToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.laptopToolStripMenuItem.Text = "Laptop";
-            // 
-            // celularesToolStripMenuItem
-            // 
-            this.celularesToolStripMenuItem.Name = "celularesToolStripMenuItem";
-            this.celularesToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.celularesToolStripMenuItem.Text = "Celulares";
-            // 
-            // accesoriosToolStripMenuItem
-            // 
-            this.accesoriosToolStripMenuItem.Name = "accesoriosToolStripMenuItem";
-            this.accesoriosToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.accesoriosToolStripMenuItem.Text = "Accesorios";
             // 
             // fventas
             // 
@@ -303,5 +313,6 @@ namespace venta_de_dispositivos
         private System.Windows.Forms.ToolStripMenuItem laptopToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem celularesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem accesoriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
     }
 }
