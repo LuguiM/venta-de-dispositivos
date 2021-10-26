@@ -37,11 +37,11 @@ namespace venta_de_dispositivos
             this.celularesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accesoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosAccesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosMySqlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.btbcel = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -72,7 +72,7 @@ namespace venta_de_dispositivos
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(789, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -92,7 +92,7 @@ namespace venta_de_dispositivos
             // 
             this.pCsToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.pCsToolStripMenuItem.Name = "pCsToolStripMenuItem";
-            this.pCsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.pCsToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
             this.pCsToolStripMenuItem.Text = "PCs";
             this.pCsToolStripMenuItem.Click += new System.EventHandler(this.pCsToolStripMenuItem_Click);
             // 
@@ -100,7 +100,7 @@ namespace venta_de_dispositivos
             // 
             this.laptopToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.laptopToolStripMenuItem.Name = "laptopToolStripMenuItem";
-            this.laptopToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.laptopToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
             this.laptopToolStripMenuItem.Text = "Laptop";
             this.laptopToolStripMenuItem.Click += new System.EventHandler(this.laptopToolStripMenuItem_Click);
             // 
@@ -108,7 +108,7 @@ namespace venta_de_dispositivos
             // 
             this.celularesToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.celularesToolStripMenuItem.Name = "celularesToolStripMenuItem";
-            this.celularesToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.celularesToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
             this.celularesToolStripMenuItem.Text = "Celulares";
             this.celularesToolStripMenuItem.Click += new System.EventHandler(this.celularesToolStripMenuItem_Click);
             // 
@@ -116,7 +116,7 @@ namespace venta_de_dispositivos
             // 
             this.accesoriosToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.accesoriosToolStripMenuItem.Name = "accesoriosToolStripMenuItem";
-            this.accesoriosToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.accesoriosToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
             this.accesoriosToolStripMenuItem.Text = "Accesorios";
             this.accesoriosToolStripMenuItem.Click += new System.EventHandler(this.accesoriosToolStripMenuItem_Click);
             // 
@@ -127,6 +127,14 @@ namespace venta_de_dispositivos
             this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(70, 24);
+            this.toolStripMenuItem2.Text = "Ayuda";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -159,14 +167,6 @@ namespace venta_de_dispositivos
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(70, 24);
-            this.toolStripMenuItem2.Text = "Ayuda";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // btbcel
             // 
@@ -273,7 +273,7 @@ namespace venta_de_dispositivos
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::venta_de_dispositivos.Properties.Resources.fondoventa;
-            this.ClientSize = new System.Drawing.Size(800, 413);
+            this.ClientSize = new System.Drawing.Size(789, 413);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btbacce);
             this.Controls.Add(this.btblaptop);
